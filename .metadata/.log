@@ -1,0 +1,597 @@
+!SESSION 2015-03-16 17:50:02.348 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.google.appengine.eclipse.core 4 0 2015-03-16 17:50:03.502
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.core [429]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.core [441]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.platform [462]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.datatools 4 0 2015-03-16 17:50:03.509
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.datatools [430]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.dbdefinition.genericJDBC; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.appengine.eclipse.core [429]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.core [441]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.platform [462]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.webtools 4 0 2015-03-16 17:50:03.517
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.webtools [432]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.appengine.eclipse.core [429]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.core [441]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.platform [462]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp 4 0 2015-03-16 17:50:03.526
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp [433]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.appengine.eclipse.core [429]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.core [441]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.platform [462]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp.jpa 4 0 2015-03-16 17:50:03.536
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp.jpa [434]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.wtp
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.wtp; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.appengine.eclipse.wtp [433]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.appengine.eclipse.core [429]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.core [441]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                            com.google.gdt.eclipse.platform [462]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp.jpa.e43 4 0 2015-03-16 17:50:03.547
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp.jpa.e43 [435]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.wtp
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.wtp; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.appengine.eclipse.wtp [433]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.appengine.eclipse.core [429]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.core [441]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                            com.google.gdt.eclipse.platform [462]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.appengine.eclipse.wtp.swarm 4 0 2015-03-16 17:50:03.570
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.appengine.eclipse.wtp.swarm [436]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.wtp
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.wtp; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.appengine.eclipse.wtp [433]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.appengine.eclipse.core [429]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.core [441]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                            com.google.gdt.eclipse.platform [462]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.apiclientlib 4 0 2015-03-16 17:50:03.579
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.apiclientlib [437]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.appengine.api 4 0 2015-03-16 17:50:03.590
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.appengine.api [438]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.core [441]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.platform [462]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.appengine.swarm 4 0 2015-03-16 17:50:03.598
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.appengine.swarm [439]
+  Unresolved requirement: Require-Bundle: com.google.gwt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gwt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gwt.eclipse.core [466]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.core [441]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.platform [462]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.appengine.swarm_backend 4 0 2015-03-16 17:50:03.603
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.appengine.swarm_backend [440]
+  Unresolved requirement: Require-Bundle: com.google.gwt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gwt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gwt.eclipse.core [466]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.core [441]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.platform [462]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.core 4 0 2015-03-16 17:50:03.607
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.core [441]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.platform [462]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.drive 4 0 2015-03-16 17:50:03.612
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.drive [454]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.apiclientlib
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.apiclientlib; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.apiclientlib [437]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph 4 0 2015-03-16 17:50:03.616
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph [455]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.login
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.login; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.login [459]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.core [441]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.platform [462]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph.hge 4 0 2015-03-16 17:50:03.620
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph.hge [456]
+  Unresolved requirement: Require-Bundle: com.vectrace.MercurialEclipse; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.core [441]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.platform [462]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph.subclipse 4 0 2015-03-16 17:50:03.624
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph.subclipse [457]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.gph
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.gph; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.gph [455]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.login
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.login; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.login [459]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.core [441]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                            com.google.gdt.eclipse.platform [462]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.gph.subversive 4 0 2015-03-16 17:50:03.627
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.gph.subversive [458]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.gph
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.gph; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.gph [455]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.login
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.login; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.login [459]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.core [441]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                            com.google.gdt.eclipse.platform [462]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.login 4 0 2015-03-16 17:50:03.631
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.login [459]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.core [441]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.platform [462]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.managedapis 4 0 2015-03-16 17:50:03.635
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.managedapis [460]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.platform [462]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.maven 4 0 2015-03-16 17:50:03.638
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.maven [461]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.core [441]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.platform [462]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.platform 4 0 2015-03-16 17:50:03.641
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.platform [462]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.suite 4 0 2015-03-16 17:50:03.645
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.suite [463]
+  Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.appengine.eclipse.core [429]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.core [441]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.platform [462]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.suite.ext 4 0 2015-03-16 17:50:03.651
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.suite.ext [464]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.suite
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.suite; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.suite [463]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.appengine.eclipse.core [429]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.core [441]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                            com.google.gdt.eclipse.platform [462]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gdt.eclipse.suite.ext.e38 4 0 2015-03-16 17:50:03.660
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gdt.eclipse.suite.ext.e38 [465]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.suite
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.suite; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.suite [463]
+         Unresolved requirement: Require-Bundle: com.google.appengine.eclipse.core; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.appengine.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.appengine.eclipse.core [429]
+                Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                     com.google.gdt.eclipse.core [441]
+                       Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+                         -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+                            com.google.gdt.eclipse.platform [462]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gwt.eclipse.core 4 0 2015-03-16 17:50:03.669
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gwt.eclipse.core [466]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.core [441]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.platform [462]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.google.gwt.eclipse.oophm 4 0 2015-03-16 17:50:03.677
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.google.gwt.eclipse.oophm [468]
+  Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.core; visibility:="reexport"
+    -> Bundle-SymbolicName: com.google.gdt.eclipse.core; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+       com.google.gdt.eclipse.core [441]
+         Unresolved requirement: Require-Bundle: com.google.gdt.eclipse.platform; visibility:="reexport"
+           -> Bundle-SymbolicName: com.google.gdt.eclipse.platform; bundle-version="3.8.0.v201410302155-rel-r43"; singleton:="true"
+              com.google.gdt.eclipse.platform [462]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
